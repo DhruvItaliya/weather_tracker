@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerLinks}}
+    <title>About</title>
+</head>
+
+<body>
+
+    {{>header}}
+    {{!-- main --}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+
+                    {{!-- left side header --}}
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                        <figure>
+                            <img src="/images/aboutMe3.png" class="img-fluid" width="300" alt="aboutMe">
+                        </figure>
+                    </div>
+                    {{!-- right side header --}}
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to weather app</p>
+                        <h1>I Am A <span> MERN Stack Developer </span></h1>
+                        <a href="/dhruv"><button>About Me <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+    {{>footerLinks}}
+
+</body>
+
+</html>

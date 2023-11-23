@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerLinks}}
+    <title>Weather</title>
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="tempForm" autocomplete="off">
+                        <input type="text" name="cityName" id="cityName" placeholder="Enter your city name">
+                        <input type="submit" name="search" id="search">
+                    </form>
+                </div>
+                <div class="output">
+                    <div class="topLayer">
+                        <p id="day">Wednesday</p>
+                        <p id="date">22 NOV</p>
+                    </div>
+                    <div class="mainLayer">
+                        <p id="city">Get output here...</p>
+                        <div class="middleLayer data_hide">
+                            <p id="temp"><span id="tempRealVal">0</span><sup>o</sup>C</p>
+                            <p id="tempStatus"><i class="fa-solid fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{!-- footer --}}
+    {{>footer}}
+    {{>footerLinks}}
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

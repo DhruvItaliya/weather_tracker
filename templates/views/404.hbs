@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerLinks}}
+    <title>404 error</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="container-fluid main_header">
+        <div class="row error_404">
+            <div class="col-md-10 col-12 mx-auto">
+                <figure >
+                    <img src="/images/404.png" class="img-fluid " alt="">
+                </figure>
+                <p>We can't seem to find a page you're looking for.</p>
+                <a href="/"><button>BACK TO HOME</button></a>                    
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+        {{>footerLinks}}
+</body>
+
+</html>
